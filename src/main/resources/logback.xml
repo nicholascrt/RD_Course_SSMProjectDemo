@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    configuration根节点
+    scan:当设定为true的时候，当配置文档发生改变，将会重新加载即热加载。默认值是true
+    scanPeriod:设定扫描时间周期。比如scanPeriod="60 seconds"
+    debug:默认是false，实时查看logback的运行状态
+
+-->
+<configuration>
+    <!--appender里面配置的都是负责写日志的组件声明
+        两个必须声明的属性：name（appender的名称）和class（appender的全名/类）
+        常见appender有三种: ConsoleAppender, FileAppender, RollingFileAppender
+            1. ConsoleAppender:把日志输出到控制台：有以下几个节点
+                <encoder>:1. 把日志转换成字节数组
+                          2. 把字节数组写入到输出流
+                          <pattern>:输出格式（C语言格式）
+                <target>: 字符串：System.out(默认的)/System.err
+            2. FileAppender:把日志保存到文件里面
+                <file>:写入日志的文件名，如果文件不存在会自动创建
+                <append>:true(默认)/false 如果是false会先清空再append
+                <encoder>格式
+    -->
+    <appender name="myBatisConsole" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                <!--
+                    %d{} %date:输出日志的日期，{}中的语法和java和SimpleDateFormat一致
+                    %t %thread:输出产生日志的线程
+                    %le %level 输出日志级别,从高到低 error>warn>info>debug>trace
+                                        info一般信息
+                                        debug一般指程序内部的信息
+                    %logger{length} %lo:输出日志的logger名，length默认是0表示全部输出
+                    %msg %message：输出程序提供的信息
+                    %n:换行
+                -->
+                [%thread] %d{HH:mm:ss.SSS} %-5level %logger{26} %msg%n
+            </pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+
+    <!--  root是真正配置使用的appender  -->
+    <root level="debug">
+        <appender-ref ref="myBatisConsole"/>
+    </root>
+</configuration>

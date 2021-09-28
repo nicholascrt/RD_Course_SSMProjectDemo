@@ -1,0 +1,33 @@
+{
+  "name" : "Position",
+  "preName" : null,
+  "comment" : "职位表",
+  "templateGroupName" : null,
+  "fullColumn" : [ {
+    "name" : "positionId",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "positionName",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "createTime",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "com.softeem",
+  "savePath" : "./src/main/java/com/softeem",
+  "saveModelName" : "RD_Course_SSMProjectDemo"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- MyBatis配置-->
+<configuration>
+    <settings>
+        <!--  配置转化设置：把所有下划线_转成驼峰 name规定写死！-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 设置方言（即使用什么语言）     -->
+            <property name="helperDialet" value="mysql"/>
+            <!--  当输入的页数不合理时，给最前或最后页          -->
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+</configuration>

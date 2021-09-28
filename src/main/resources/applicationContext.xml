@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- Spring注解模式包扫描  @Service @Controller @Component @Autowired -->
+    <context:component-scan base-package="com.softeem"/>
+    <!-- SpringMVC注解模式 依赖于Spring的包扫描 -->
+    <mvc:annotation-driven>
+        <!--   修复响应乱码     -->
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=utf-8</value>
+                        <!--   作为json序列化输出时候的配置                     -->
+                        <value>application/json;charset=utf-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!--  SpringMVC将静态资源文件，比如图片,css,js排除在外，提高SpringMVC处理请求的速度  -->
+    <mvc:default-servlet-handler/>
+    <!-- 将Swagger配置类注入到IOC容器   -->
+    <bean class="com.softeem.config.SwaggerConfig"/>
+    <!-- 对Swagger的静态资源放行   -->
+    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/"/>
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
+
+    <!-- 配置freemarker模板引擎   -->
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/ftl/"/>
+        <property name="freemarkerSettings">
+            <props>
+                <!-- 这里的编码是在读取ftl文件时，采用utf-8字符集。和请求响应没关系
+                        上面<mvc:annotation-driven>是对没有采用模板引擎直接返回数据进行编码配置
+                        例如ajax请求，后台返回json字符串
+                -->
+                <prop key="defaultEncoding">UTF-8</prop>
+            </props>
+        </property>
+    </bean>
+    <!--  这里设置的utf-8是对freemarker模板引擎设置的  -->
+    <bean id="ViewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="contentType" value="text/html;charset=utf-8"/>
+        <property name="suffix" value=".ftl"/>
+    </bean>
+    <!-- 引入外部文件,等于MyBatis配置里面的<properties resource="jdbc.properties"/> -->
+    <!--    <context:property-placeholder location="classpath:jdbc.properties"/>-->
+
+    <!-- 属性字段读取，通过自定义加密解密类   -->
+    <bean class="com.softeem.config.EncryptPropertyPlaceHolderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--  文件上传解析器 用于MultipartFormData -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"/>
+    </bean>
+
+    <!-- 连接池的配置，对连接集中创建和集中管理   -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc_driver}"/>
+        <property name="url" value="${jdbc_url}"/>
+        <property name="username" value="${jdbc_username}"/>
+        <property name="password" value="${jdbc_password}"/>
+        <property name="initialSize" value="5"/>
+        <property name="maxActive" value="10"/>
+    </bean>
+    <!-- org.mybatis.spring.SqlSessionFactoryBean会根据配置信息自动创建sqlSessionFactory，就不用去创建工具类Util
+            ref是引用，引用我们已经有的东西（对象引用类型）
+                扫描用ref，引用单个文件要用value
+    -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:/mapper/*.xml"/>
+        <!-- 导入mybatis配置文件       -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+    <!-- Mybatis接口扫描   -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.softeem.dao"/>
+    </bean>
+    <!-- 声明式事务配置
+         基于数据源的事务管理器，负责事务的开启、提交和回滚等操作
+    -->
+    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 配置基于当前数据源的事务管理器       -->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!-- 打开声明式事务   -->
+    <tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+<!--            <mvc:exclude-mapping path="/login"/>-->
+            <mvc:exclude-mapping path="/css/**"/>
+            <mvc:exclude-mapping path="/js/**"/>
+            <mvc:exclude-mapping path="/images/**"/>
+            <mvc:exclude-mapping path="/fonts/**"/>
+            <mvc:exclude-mapping path="/checkLogin"/>
+            <mvc:exclude-mapping path="/captcha"/>
+            <!-- 排除部分swagger资源的拦截   -->
+            <mvc:exclude-mapping path="/swagger-ui.html/**"/>
+            <mvc:exclude-mapping path="/webjars/**"/>
+            <mvc:exclude-mapping path="/swagger-resources/**"/>
+            <mvc:exclude-mapping path="/webjars/**"/>
+            <mvc:exclude-mapping path="/v2/**"/>
+            <!-- 跨域资源  -->
+            <mvc:exclude-mapping path="/csrf/**"/>
+            <bean class="com.softeem.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

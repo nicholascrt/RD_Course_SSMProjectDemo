@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="0" name="com.softeem.controller.DepartmentControllerTest" time="0.017" errors="3" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="NZ"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\chenr\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="idea.version2020.1" value="true"/>
+    <property name="maven.ext.class.path" value="D:\Program Files(x86)\IntelliJ IDEA 2020.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="D:\MyWorkspace\apache-maven-3.8.1\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Program Files\Java\jdk1.8.0_281\jre\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\MyWorkspace\apache-maven-3.8.1\bin;C:\Users\chenr\AppData\Local\Microsoft\WindowsApps;D:\Program Files(x86)\Microsoft VS Code\bin;&quot;D:\MyWorkspace\apache-maven-3.8.1\bin;&quot;;&quot;D:\MyWorkspace\apache-maven-3.8.1\bin;&quot;;;."/>
+    <property name="maven.conf" value="D:\MyWorkspace\apache-maven-3.8.1/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\chenr"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="chenr"/>
+    <property name="java.class.path" value="D:\MyWorkspace\apache-maven-3.8.1\boot\plexus-classworlds-2.6.0.jar;D:\MyWorkspace\apache-maven-3.8.1\boot\plexus-classworlds.license;D:\Program Files(x86)\IntelliJ IDEA 2020.1\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2020.1 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\MyWorkspace\apache-maven-3.8.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.softeem.controller.DepartmentControllerTest" name="queryDepartmentById" time="0.012">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 49 more
+</error>
+    <system-out>[main] 10:34:39.117 DEBUG o.s.t.c.j.SpringJUnit4ClassRunner SpringJUnit4ClassRunner constructor called with [class com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.125 DEBUG o.s.t.c.BootstrapUtils Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[main] 10:34:39.134 DEBUG o.s.t.c.BootstrapUtils Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[main] 10:34:39.178 DEBUG o.s.t.c.BootstrapUtils Instantiating TestContextBootstrapper for test class [com.softeem.controller.DepartmentControllerTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+[main] 10:34:39.218 DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@2698dc7 declaringClass = &apos;com.softeem.controller.DepartmentControllerTest&apos;, classes = &apos;{}&apos;, locations = &apos;{classpath:applicationContext.xml}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+[main] 10:34:39.260 DEBUG o.s.t.c.s.ActiveProfilesUtils Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.261 DEBUG o.s.t.c.s.DefaultTestContextBootstrapper @TestExecutionListeners is not present for class [com.softeem.controller.DepartmentControllerTest]: using defaults.
+[main] 10:34:39.262 INFO  o.s.t.c.s.DefaultTestContextBootstrapper Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[main] 10:34:39.281 INFO  o.s.t.c.s.DefaultTestContextBootstrapper Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@564718df, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@51b7e5df, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a70f16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@62e136d3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c8e4bb0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6279cee3, org.springframework.test.context.event.EventPublishingTestExecutionListener@4206a205]
+[main] 10:34:39.284 DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.286 DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.288 DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.288 DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.292 DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener Before test class: context [DefaultTestContext@41ee392b testClass = DepartmentControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+[main] 10:34:39.295 DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.295 DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:39.296 DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener Performing dependency injection for test context [[DefaultTestContext@41ee392b testClass = DepartmentControllerTest, testInstance = com.softeem.controller.DepartmentControllerTest@4ae3c1cd, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]], attributes = map[[empty]]]].
+[main] 10:34:39.298 DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]].
+[main] 10:34:39.298 DEBUG o.s.t.c.s.AbstractGenericContextLoader Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+[main] 10:34:39.359 DEBUG o.s.c.e.StandardEnvironment Activating profiles []
+[main] 10:34:39.656 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\config\SwaggerConfig.class]
+[main] 10:34:39.690 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:39.691 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:39.702 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\DealRecordServiceImpl.class]
+[main] 10:34:39.703 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\DepartmentServiceImpl.class]
+[main] 10:34:39.704 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\EmployeeServiceImpl.class]
+[main] 10:34:39.705 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\ExpenseReportDetailServiceImpl.class]
+[main] 10:34:39.706 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\ExpenseReportServiceImpl.class]
+[main] 10:34:39.707 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\PositionServiceImpl.class]
+[main] 10:34:39.802 DEBUG o.s.b.f.x.XmlBeanDefinitionReader Loaded 53 bean definitions from class path resource [applicationContext.xml]
+[main] 10:34:39.802 DEBUG o.s.c.s.GenericApplicationContext Refreshing org.springframework.context.support.GenericApplicationContext@4b168fa9
+[main] 10:34:39.884 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+[main] 10:34:39.994 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:39.994 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:40.012 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ServiceModelToSwagger2MapperImpl.class]
+[main] 10:34:40.013 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/VendorExtensionsMapperImpl.class]
+[main] 10:34:40.025 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ParameterMapperImpl.class]
+[main] 10:34:40.031 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ModelMapperImpl.class]
+[main] 10:34:40.034 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/LicenseMapperImpl.class]
+[main] 10:34:40.044 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/SecurityMapperImpl.class]
+[main] 10:34:40.095 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReferenceScanner.class]
+[main] 10:34:40.097 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]
+[main] 10:34:40.098 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]
+[main] 10:34:40.100 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReader.class]
+[main] 10:34:40.103 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]
+[main] 10:34:40.105 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/MediaTypeReader.class]
+[main] 10:34:40.107 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]
+[main] 10:34:40.109 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiModelReader.class]
+[main] 10:34:40.111 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionLookup.class]
+[main] 10:34:40.118 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationModelsProvider.class]
+[main] 10:34:40.119 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationDeprecatedReader.class]
+[main] 10:34:40.122 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ResponseMessagesReader.class]
+[main] 10:34:40.128 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterReader.class]
+[main] 10:34:40.131 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultTagsProvider.class]
+[main] 10:34:40.134 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationTagsReader.class]
+[main] 10:34:40.140 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]
+[main] 10:34:40.142 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultOperationReader.class]
+[main] 10:34:40.145 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterRequestConditionReader.class]
+[main] 10:34:40.146 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterHeadersConditionReader.class]
+[main] 10:34:40.148 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationResponseClassReader.class]
+[main] 10:34:40.149 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/CachingOperationNameGenerator.class]
+[main] 10:34:40.161 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterMultiplesReader.class]
+[main] 10:34:40.166 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ModelAttributeParameterExpander.class]
+[main] 10:34:40.169 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterTypeReader.class]
+[main] 10:34:40.170 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterRequiredReader.class]
+[main] 10:34:40.178 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDataTypeReader.class]
+[main] 10:34:40.179 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDefaultReader.class]
+[main] 10:34:40.182 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterNameReader.class]
+[main] 10:34:40.185 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ExpandedParameterBuilder.class]
+[main] 10:34:40.213 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]
+[main] 10:34:40.229 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]
+[main] 10:34:40.230 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsManager.class]
+[main] 10:34:40.235 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/QueryStringUriTemplateDecorator.class]
+[main] 10:34:40.237 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathMappingDecorator.class]
+[main] 10:34:40.238 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathSanitizer.class]
+[main] 10:34:40.242 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/OperationPathDecorator.class]
+[main] 10:34:40.300 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelDependencyProvider.class]
+[main] 10:34:40.302 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/TypeNameExtractor.class]
+[main] 10:34:40.303 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/PropertyDiscriminatorBasedInheritancePlugin.class]
+[main] 10:34:40.313 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/XmlModelPlugin.class]
+[main] 10:34:40.314 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/SchemaPluginsManager.class]
+[main] 10:34:40.315 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/CachingModelPropertiesProvider.class]
+[main] 10:34:40.316 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/ObjectMapperBeanPropertyNamingStrategy.class]
+[main] 10:34:40.318 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/bean/AccessorsProvider.class]
+[main] 10:34:40.320 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/field/FieldProvider.class]
+[main] 10:34:40.325 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/XmlPropertyPlugin.class]
+[main] 10:34:40.326 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/OptimizedModelPropertiesProvider.class]
+[main] 10:34:40.328 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/FactoryMethodProvider.class]
+[main] 10:34:40.340 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelProvider.class]
+[main] 10:34:40.341 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelDependencyProvider.class]
+[main] 10:34:40.342 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/JacksonEnumTypeDeterminer.class]
+[main] 10:34:40.344 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelProvider.class]
+[main] 10:34:40.368 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelPropertyPropertyBuilder.class]
+[main] 10:34:40.368 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelTypeNameProvider.class]
+[main] 10:34:40.370 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelBuilder.class]
+[main] 10:34:40.379 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParameterReader.class]
+[main] 10:34:40.380 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/VendorExtensionsReader.class]
+[main] 10:34:40.382 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationResponseClassReader.class]
+[main] 10:34:40.384 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationModelsProvider.class]
+[main] 10:34:40.386 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerMediaTypeReader.class]
+[main] 10:34:40.388 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHttpMethodReader.class]
+[main] 10:34:40.390 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParametersReader.class]
+[main] 10:34:40.391 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationAuthReader.class]
+[main] 10:34:40.392 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHiddenReader.class]
+[main] 10:34:40.393 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationSummaryReader.class]
+[main] 10:34:40.394 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerResponseMessageReader.class]
+[main] 10:34:40.395 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNicknameIntoUniqueIdReader.class]
+[main] 10:34:40.395 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationPositionReader.class]
+[main] 10:34:40.396 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNotesReader.class]
+[main] 10:34:40.397 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationTagsReader.class]
+[main] 10:34:40.398 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/ApiParamParameterBuilder.class]
+[main] 10:34:40.399 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/SwaggerExpandedParameterBuilder.class]
+[main] 10:34:40.420 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/SwaggerApiListingReader.class]
+[main] 10:34:40.432 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ClassOrApiAnnotationResourceGrouping.class]
+[main] 10:34:40.433 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]
+[main] 10:34:40.436 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ApiResourceController.class]
+[main] 10:34:40.480 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:40.480 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:40.609 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+[main] 10:34:40.663 DEBUG o.a.i.logging.LogFactory Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
+[main] 10:34:40.670 DEBUG o.m.s.m.ClassPathMapperScanner Ignored because not a concrete top-level class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\test-classes\com\softeem\dao\DepartmentDaoTest.class]
+[main] 10:34:40.671 DEBUG o.m.s.m.ClassPathMapperScanner Ignored because not a concrete top-level class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\test-classes\com\softeem\dao\EmployeeDaoTest.class]
+[main] 10:34:40.671 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\DealRecordDao.class]
+[main] 10:34:40.672 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\DepartmentDao.class]
+[main] 10:34:40.672 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\EmployeeDao.class]
+[main] 10:34:40.673 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\ExpenseReportDao.class]
+[main] 10:34:40.674 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\ExpenseReportDetailDao.class]
+[main] 10:34:40.674 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\PositionDao.class]
+[main] 10:34:40.676 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;dealRecordDao&apos; and &apos;com.softeem.dao.DealRecordDao&apos; mapperInterface
+[main] 10:34:40.677 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;dealRecordDao&apos;.
+[main] 10:34:40.677 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;departmentDao&apos; and &apos;com.softeem.dao.DepartmentDao&apos; mapperInterface
+[main] 10:34:40.677 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;departmentDao&apos;.
+[main] 10:34:40.677 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;employeeDao&apos; and &apos;com.softeem.dao.EmployeeDao&apos; mapperInterface
+[main] 10:34:40.677 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;employeeDao&apos;.
+[main] 10:34:40.677 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;expenseReportDao&apos; and &apos;com.softeem.dao.ExpenseReportDao&apos; mapperInterface
+[main] 10:34:40.677 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;expenseReportDao&apos;.
+[main] 10:34:40.678 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;expenseReportDetailDao&apos; and &apos;com.softeem.dao.ExpenseReportDetailDao&apos; mapperInterface
+[main] 10:34:40.678 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;expenseReportDetailDao&apos;.
+[main] 10:34:40.678 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;positionDao&apos; and &apos;com.softeem.dao.PositionDao&apos; mapperInterface
+[main] 10:34:40.678 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;positionDao&apos;.
+[main] 10:34:40.799 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;com.softeem.config.EncryptPropertyPlaceHolderConfigurer#0&apos;
+[main] 10:34:41.651 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_driver&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:41.651 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_url&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:41.651 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_username&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:41.652 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_password&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:41.653 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+[main] 10:34:41.658 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+[main] 10:34:41.658 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.config.internalTransactionalEventListenerFactory&apos;
+[main] 10:34:41.664 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+[main] 10:34:41.666 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+[main] 10:34:41.674 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+[main] 10:34:41.712 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;objectMapperConfigurer&apos;
+[main] 10:34:41.719 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.config.internalTransactionAdvisor&apos;
+[main] 10:34:41.722 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0&apos;
+[main] 10:34:41.747 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;swaggerConfig&apos;
+[main] 10:34:41.753 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;departmentController&apos;
+[main] 10:34:41.795 WARN  o.s.c.s.GenericApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[main] 10:34:41.803 ERROR o.s.t.c.TestContextManager Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a70f16] to prepare test instance [com.softeem.controller.DepartmentControllerTest@4ae3c1cd]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 49 common frames omitted
+</system-out>
+  </testcase>
+  <testcase classname="com.softeem.controller.DepartmentControllerTest" name="insertDepartment" time="0.004">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 49 more
+</error>
+    <system-out>[main] 10:34:41.814 DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:41.814 DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:41.815 DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener Performing dependency injection for test context [[DefaultTestContext@41ee392b testClass = DepartmentControllerTest, testInstance = com.softeem.controller.DepartmentControllerTest@7c18432b, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]], attributes = map[[empty]]]].
+[main] 10:34:41.816 DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]].
+[main] 10:34:41.816 DEBUG o.s.t.c.s.AbstractGenericContextLoader Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+[main] 10:34:41.816 DEBUG o.s.c.e.StandardEnvironment Activating profiles []
+[main] 10:34:41.919 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\config\SwaggerConfig.class]
+[main] 10:34:41.924 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:41.926 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:41.941 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\DealRecordServiceImpl.class]
+[main] 10:34:41.942 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\DepartmentServiceImpl.class]
+[main] 10:34:41.943 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\EmployeeServiceImpl.class]
+[main] 10:34:41.944 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\ExpenseReportDetailServiceImpl.class]
+[main] 10:34:41.945 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\ExpenseReportServiceImpl.class]
+[main] 10:34:41.946 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\PositionServiceImpl.class]
+[main] 10:34:41.957 DEBUG o.s.b.f.x.XmlBeanDefinitionReader Loaded 53 bean definitions from class path resource [applicationContext.xml]
+[main] 10:34:41.957 DEBUG o.s.c.s.GenericApplicationContext Refreshing org.springframework.context.support.GenericApplicationContext@7646731d
+[main] 10:34:41.960 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+[main] 10:34:41.979 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:41.979 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:41.993 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ServiceModelToSwagger2MapperImpl.class]
+[main] 10:34:41.993 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/VendorExtensionsMapperImpl.class]
+[main] 10:34:42.000 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ParameterMapperImpl.class]
+[main] 10:34:42.007 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ModelMapperImpl.class]
+[main] 10:34:42.009 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/LicenseMapperImpl.class]
+[main] 10:34:42.012 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/SecurityMapperImpl.class]
+[main] 10:34:42.036 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReferenceScanner.class]
+[main] 10:34:42.037 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]
+[main] 10:34:42.038 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]
+[main] 10:34:42.040 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReader.class]
+[main] 10:34:42.041 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]
+[main] 10:34:42.042 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/MediaTypeReader.class]
+[main] 10:34:42.043 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]
+[main] 10:34:42.045 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiModelReader.class]
+[main] 10:34:42.046 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionLookup.class]
+[main] 10:34:42.051 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationModelsProvider.class]
+[main] 10:34:42.052 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationDeprecatedReader.class]
+[main] 10:34:42.053 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ResponseMessagesReader.class]
+[main] 10:34:42.055 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterReader.class]
+[main] 10:34:42.056 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultTagsProvider.class]
+[main] 10:34:42.057 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationTagsReader.class]
+[main] 10:34:42.059 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]
+[main] 10:34:42.060 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultOperationReader.class]
+[main] 10:34:42.062 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterRequestConditionReader.class]
+[main] 10:34:42.063 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterHeadersConditionReader.class]
+[main] 10:34:42.065 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationResponseClassReader.class]
+[main] 10:34:42.066 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/CachingOperationNameGenerator.class]
+[main] 10:34:42.070 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterMultiplesReader.class]
+[main] 10:34:42.073 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ModelAttributeParameterExpander.class]
+[main] 10:34:42.076 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterTypeReader.class]
+[main] 10:34:42.077 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterRequiredReader.class]
+[main] 10:34:42.081 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDataTypeReader.class]
+[main] 10:34:42.081 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDefaultReader.class]
+[main] 10:34:42.084 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterNameReader.class]
+[main] 10:34:42.085 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ExpandedParameterBuilder.class]
+[main] 10:34:42.095 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]
+[main] 10:34:42.099 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]
+[main] 10:34:42.100 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsManager.class]
+[main] 10:34:42.104 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/QueryStringUriTemplateDecorator.class]
+[main] 10:34:42.106 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathMappingDecorator.class]
+[main] 10:34:42.107 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathSanitizer.class]
+[main] 10:34:42.111 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/OperationPathDecorator.class]
+[main] 10:34:42.175 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelDependencyProvider.class]
+[main] 10:34:42.177 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/TypeNameExtractor.class]
+[main] 10:34:42.178 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/PropertyDiscriminatorBasedInheritancePlugin.class]
+[main] 10:34:42.179 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/XmlModelPlugin.class]
+[main] 10:34:42.180 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/SchemaPluginsManager.class]
+[main] 10:34:42.181 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/CachingModelPropertiesProvider.class]
+[main] 10:34:42.183 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/ObjectMapperBeanPropertyNamingStrategy.class]
+[main] 10:34:42.185 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/bean/AccessorsProvider.class]
+[main] 10:34:42.187 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/field/FieldProvider.class]
+[main] 10:34:42.193 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/XmlPropertyPlugin.class]
+[main] 10:34:42.194 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/OptimizedModelPropertiesProvider.class]
+[main] 10:34:42.196 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/FactoryMethodProvider.class]
+[main] 10:34:42.203 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelProvider.class]
+[main] 10:34:42.204 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelDependencyProvider.class]
+[main] 10:34:42.206 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/JacksonEnumTypeDeterminer.class]
+[main] 10:34:42.209 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelProvider.class]
+[main] 10:34:42.234 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelPropertyPropertyBuilder.class]
+[main] 10:34:42.235 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelTypeNameProvider.class]
+[main] 10:34:42.236 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelBuilder.class]
+[main] 10:34:42.243 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParameterReader.class]
+[main] 10:34:42.244 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/VendorExtensionsReader.class]
+[main] 10:34:42.245 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationResponseClassReader.class]
+[main] 10:34:42.247 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationModelsProvider.class]
+[main] 10:34:42.248 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerMediaTypeReader.class]
+[main] 10:34:42.249 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHttpMethodReader.class]
+[main] 10:34:42.250 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParametersReader.class]
+[main] 10:34:42.251 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationAuthReader.class]
+[main] 10:34:42.252 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHiddenReader.class]
+[main] 10:34:42.252 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationSummaryReader.class]
+[main] 10:34:42.253 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerResponseMessageReader.class]
+[main] 10:34:42.255 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNicknameIntoUniqueIdReader.class]
+[main] 10:34:42.256 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationPositionReader.class]
+[main] 10:34:42.257 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNotesReader.class]
+[main] 10:34:42.259 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationTagsReader.class]
+[main] 10:34:42.259 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/ApiParamParameterBuilder.class]
+[main] 10:34:42.261 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/SwaggerExpandedParameterBuilder.class]
+[main] 10:34:42.269 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/SwaggerApiListingReader.class]
+[main] 10:34:42.278 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ClassOrApiAnnotationResourceGrouping.class]
+[main] 10:34:42.279 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]
+[main] 10:34:42.281 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ApiResourceController.class]
+[main] 10:34:42.322 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:42.322 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:42.335 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+[main] 10:34:42.341 DEBUG o.m.s.m.ClassPathMapperScanner Ignored because not a concrete top-level class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\test-classes\com\softeem\dao\DepartmentDaoTest.class]
+[main] 10:34:42.342 DEBUG o.m.s.m.ClassPathMapperScanner Ignored because not a concrete top-level class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\test-classes\com\softeem\dao\EmployeeDaoTest.class]
+[main] 10:34:42.342 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\DealRecordDao.class]
+[main] 10:34:42.342 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\DepartmentDao.class]
+[main] 10:34:42.343 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\EmployeeDao.class]
+[main] 10:34:42.343 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\ExpenseReportDao.class]
+[main] 10:34:42.344 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\ExpenseReportDetailDao.class]
+[main] 10:34:42.344 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\PositionDao.class]
+[main] 10:34:42.345 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;dealRecordDao&apos; and &apos;com.softeem.dao.DealRecordDao&apos; mapperInterface
+[main] 10:34:42.345 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;dealRecordDao&apos;.
+[main] 10:34:42.345 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;departmentDao&apos; and &apos;com.softeem.dao.DepartmentDao&apos; mapperInterface
+[main] 10:34:42.345 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;departmentDao&apos;.
+[main] 10:34:42.345 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;employeeDao&apos; and &apos;com.softeem.dao.EmployeeDao&apos; mapperInterface
+[main] 10:34:42.346 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;employeeDao&apos;.
+[main] 10:34:42.346 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;expenseReportDao&apos; and &apos;com.softeem.dao.ExpenseReportDao&apos; mapperInterface
+[main] 10:34:42.346 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;expenseReportDao&apos;.
+[main] 10:34:42.346 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;expenseReportDetailDao&apos; and &apos;com.softeem.dao.ExpenseReportDetailDao&apos; mapperInterface
+[main] 10:34:42.346 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;expenseReportDetailDao&apos;.
+[main] 10:34:42.346 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;positionDao&apos; and &apos;com.softeem.dao.PositionDao&apos; mapperInterface
+[main] 10:34:42.347 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;positionDao&apos;.
+[main] 10:34:42.351 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;com.softeem.config.EncryptPropertyPlaceHolderConfigurer#0&apos;
+[main] 10:34:42.355 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_driver&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.355 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_url&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.355 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_username&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.356 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_password&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.357 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+[main] 10:34:42.358 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+[main] 10:34:42.358 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.config.internalTransactionalEventListenerFactory&apos;
+[main] 10:34:42.362 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+[main] 10:34:42.363 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+[main] 10:34:42.364 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+[main] 10:34:42.368 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;objectMapperConfigurer&apos;
+[main] 10:34:42.370 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.config.internalTransactionAdvisor&apos;
+[main] 10:34:42.371 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0&apos;
+[main] 10:34:42.376 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;swaggerConfig&apos;
+[main] 10:34:42.379 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;departmentController&apos;
+[main] 10:34:42.389 WARN  o.s.c.s.GenericApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[main] 10:34:42.390 ERROR o.s.t.c.TestContextManager Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a70f16] to prepare test instance [com.softeem.controller.DepartmentControllerTest@7c18432b]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 49 common frames omitted
+</system-out>
+  </testcase>
+  <testcase classname="com.softeem.controller.DepartmentControllerTest" name="switchDepartmentStatus" time="0.001">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 49 more
+</error>
+    <system-out>[main] 10:34:42.396 DEBUG o.s.t.a.ProfileValueUtils Retrieved @ProfileValueSourceConfiguration [null] for test class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:42.396 DEBUG o.s.t.a.ProfileValueUtils Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.softeem.controller.DepartmentControllerTest]
+[main] 10:34:42.397 DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener Performing dependency injection for test context [[DefaultTestContext@41ee392b testClass = DepartmentControllerTest, testInstance = com.softeem.controller.DepartmentControllerTest@29be7749, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]], attributes = map[[empty]]]].
+[main] 10:34:42.397 DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]].
+[main] 10:34:42.398 DEBUG o.s.t.c.s.AbstractGenericContextLoader Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1e67a849 testClass = DepartmentControllerTest, locations = &apos;{classpath:applicationContext.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+[main] 10:34:42.398 DEBUG o.s.c.e.StandardEnvironment Activating profiles []
+[main] 10:34:42.491 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\config\SwaggerConfig.class]
+[main] 10:34:42.497 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:42.498 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:42.511 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\DealRecordServiceImpl.class]
+[main] 10:34:42.512 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\DepartmentServiceImpl.class]
+[main] 10:34:42.513 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\EmployeeServiceImpl.class]
+[main] 10:34:42.514 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\ExpenseReportDetailServiceImpl.class]
+[main] 10:34:42.515 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\ExpenseReportServiceImpl.class]
+[main] 10:34:42.515 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\service\impl\PositionServiceImpl.class]
+[main] 10:34:42.526 DEBUG o.s.b.f.x.XmlBeanDefinitionReader Loaded 53 bean definitions from class path resource [applicationContext.xml]
+[main] 10:34:42.527 DEBUG o.s.c.s.GenericApplicationContext Refreshing org.springframework.context.support.GenericApplicationContext@5f84abe8
+[main] 10:34:42.528 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+[main] 10:34:42.542 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:42.542 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:42.556 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ServiceModelToSwagger2MapperImpl.class]
+[main] 10:34:42.556 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/VendorExtensionsMapperImpl.class]
+[main] 10:34:42.563 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ParameterMapperImpl.class]
+[main] 10:34:42.567 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/ModelMapperImpl.class]
+[main] 10:34:42.568 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/LicenseMapperImpl.class]
+[main] 10:34:42.572 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/mappers/SecurityMapperImpl.class]
+[main] 10:34:42.593 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReferenceScanner.class]
+[main] 10:34:42.595 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]
+[main] 10:34:42.596 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]
+[main] 10:34:42.599 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingReader.class]
+[main] 10:34:42.601 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]
+[main] 10:34:42.602 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/MediaTypeReader.class]
+[main] 10:34:42.603 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]
+[main] 10:34:42.605 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiModelReader.class]
+[main] 10:34:42.607 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionLookup.class]
+[main] 10:34:42.612 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationModelsProvider.class]
+[main] 10:34:42.613 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationDeprecatedReader.class]
+[main] 10:34:42.614 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ResponseMessagesReader.class]
+[main] 10:34:42.616 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterReader.class]
+[main] 10:34:42.617 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultTagsProvider.class]
+[main] 10:34:42.618 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationTagsReader.class]
+[main] 10:34:42.621 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]
+[main] 10:34:42.623 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/DefaultOperationReader.class]
+[main] 10:34:42.624 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterRequestConditionReader.class]
+[main] 10:34:42.625 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterHeadersConditionReader.class]
+[main] 10:34:42.627 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/OperationResponseClassReader.class]
+[main] 10:34:42.627 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/operation/CachingOperationNameGenerator.class]
+[main] 10:34:42.632 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterMultiplesReader.class]
+[main] 10:34:42.638 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ModelAttributeParameterExpander.class]
+[main] 10:34:42.642 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterTypeReader.class]
+[main] 10:34:42.643 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterRequiredReader.class]
+[main] 10:34:42.648 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDataTypeReader.class]
+[main] 10:34:42.648 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDefaultReader.class]
+[main] 10:34:42.651 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ParameterNameReader.class]
+[main] 10:34:42.661 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/readers/parameter/ExpandedParameterBuilder.class]
+[main] 10:34:42.681 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]
+[main] 10:34:42.685 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]
+[main] 10:34:42.686 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsManager.class]
+[main] 10:34:42.692 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/QueryStringUriTemplateDecorator.class]
+[main] 10:34:42.694 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathMappingDecorator.class]
+[main] 10:34:42.695 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/PathSanitizer.class]
+[main] 10:34:42.698 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/paths/OperationPathDecorator.class]
+[main] 10:34:42.748 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelDependencyProvider.class]
+[main] 10:34:42.749 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/TypeNameExtractor.class]
+[main] 10:34:42.750 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/PropertyDiscriminatorBasedInheritancePlugin.class]
+[main] 10:34:42.751 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/XmlModelPlugin.class]
+[main] 10:34:42.752 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/plugins/SchemaPluginsManager.class]
+[main] 10:34:42.753 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/CachingModelPropertiesProvider.class]
+[main] 10:34:42.754 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/ObjectMapperBeanPropertyNamingStrategy.class]
+[main] 10:34:42.756 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/bean/AccessorsProvider.class]
+[main] 10:34:42.759 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/field/FieldProvider.class]
+[main] 10:34:42.762 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/XmlPropertyPlugin.class]
+[main] 10:34:42.763 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/OptimizedModelPropertiesProvider.class]
+[main] 10:34:42.765 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/property/FactoryMethodProvider.class]
+[main] 10:34:42.773 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/CachingModelProvider.class]
+[main] 10:34:42.775 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelDependencyProvider.class]
+[main] 10:34:42.776 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/JacksonEnumTypeDeterminer.class]
+[main] 10:34:42.777 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/DefaultModelProvider.class]
+[main] 10:34:42.795 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelPropertyPropertyBuilder.class]
+[main] 10:34:42.796 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelTypeNameProvider.class]
+[main] 10:34:42.797 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/schema/ApiModelBuilder.class]
+[main] 10:34:42.806 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParameterReader.class]
+[main] 10:34:42.807 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/VendorExtensionsReader.class]
+[main] 10:34:42.808 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationResponseClassReader.class]
+[main] 10:34:42.811 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationModelsProvider.class]
+[main] 10:34:42.813 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerMediaTypeReader.class]
+[main] 10:34:42.816 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHttpMethodReader.class]
+[main] 10:34:42.818 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParametersReader.class]
+[main] 10:34:42.819 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationAuthReader.class]
+[main] 10:34:42.820 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationHiddenReader.class]
+[main] 10:34:42.821 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationSummaryReader.class]
+[main] 10:34:42.822 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerResponseMessageReader.class]
+[main] 10:34:42.823 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNicknameIntoUniqueIdReader.class]
+[main] 10:34:42.824 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationPositionReader.class]
+[main] 10:34:42.824 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/OperationNotesReader.class]
+[main] 10:34:42.825 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationTagsReader.class]
+[main] 10:34:42.826 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/ApiParamParameterBuilder.class]
+[main] 10:34:42.828 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/readers/parameter/SwaggerExpandedParameterBuilder.class]
+[main] 10:34:42.838 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/SwaggerApiListingReader.class]
+[main] 10:34:42.847 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ClassOrApiAnnotationResourceGrouping.class]
+[main] 10:34:42.849 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]
+[main] 10:34:42.851 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: URL [jar:file:/D:/apache-maven-3.6.3/Repository/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/web/ApiResourceController.class]
+[main] 10:34:42.900 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\DepartmentController.class]
+[main] 10:34:42.900 DEBUG o.s.c.a.ClassPathBeanDefinitionScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\controller\IndexController.class]
+[main] 10:34:42.913 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+[main] 10:34:42.919 DEBUG o.m.s.m.ClassPathMapperScanner Ignored because not a concrete top-level class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\test-classes\com\softeem\dao\DepartmentDaoTest.class]
+[main] 10:34:42.920 DEBUG o.m.s.m.ClassPathMapperScanner Ignored because not a concrete top-level class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\test-classes\com\softeem\dao\EmployeeDaoTest.class]
+[main] 10:34:42.921 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\DealRecordDao.class]
+[main] 10:34:42.922 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\DepartmentDao.class]
+[main] 10:34:42.922 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\EmployeeDao.class]
+[main] 10:34:42.923 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\ExpenseReportDao.class]
+[main] 10:34:42.923 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\ExpenseReportDetailDao.class]
+[main] 10:34:42.924 DEBUG o.m.s.m.ClassPathMapperScanner Identified candidate component class: file [D:\MyWorkspace\IDEAWorkspace\RD_Course_SSMProjectDemo\target\classes\com\softeem\dao\PositionDao.class]
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;dealRecordDao&apos; and &apos;com.softeem.dao.DealRecordDao&apos; mapperInterface
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;dealRecordDao&apos;.
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;departmentDao&apos; and &apos;com.softeem.dao.DepartmentDao&apos; mapperInterface
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;departmentDao&apos;.
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;employeeDao&apos; and &apos;com.softeem.dao.EmployeeDao&apos; mapperInterface
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;employeeDao&apos;.
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;expenseReportDao&apos; and &apos;com.softeem.dao.ExpenseReportDao&apos; mapperInterface
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;expenseReportDao&apos;.
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;expenseReportDetailDao&apos; and &apos;com.softeem.dao.ExpenseReportDetailDao&apos; mapperInterface
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;expenseReportDetailDao&apos;.
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Creating MapperFactoryBean with name &apos;positionDao&apos; and &apos;com.softeem.dao.PositionDao&apos; mapperInterface
+[main] 10:34:42.927 DEBUG o.m.s.m.ClassPathMapperScanner Enabling autowire by type for MapperFactoryBean with name &apos;positionDao&apos;.
+[main] 10:34:42.932 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;com.softeem.config.EncryptPropertyPlaceHolderConfigurer#0&apos;
+[main] 10:34:42.936 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_driver&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.936 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_url&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.936 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_username&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.936 DEBUG o.s.c.e.PropertySourcesPropertyResolver Found key &apos;jdbc_password&apos; in PropertySource &apos;localProperties&apos; with value of type String
+[main] 10:34:42.937 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+[main] 10:34:42.940 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+[main] 10:34:42.941 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.config.internalTransactionalEventListenerFactory&apos;
+[main] 10:34:42.945 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+[main] 10:34:42.946 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+[main] 10:34:42.947 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+[main] 10:34:42.950 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;objectMapperConfigurer&apos;
+[main] 10:34:42.952 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.config.internalTransactionAdvisor&apos;
+[main] 10:34:42.953 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0&apos;
+[main] 10:34:42.959 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;swaggerConfig&apos;
+[main] 10:34:42.961 DEBUG o.s.b.f.s.DefaultListableBeanFactory Creating shared instance of singleton bean &apos;departmentController&apos;
+[main] 10:34:42.970 WARN  o.s.c.s.GenericApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[main] 10:34:42.971 ERROR o.s.t.c.TestContextManager Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@18a70f16] to prepare test instance [com.softeem.controller.DepartmentControllerTest@29be7749]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &apos;departmentController&apos;: Unsatisfied dependency expressed through field &apos;request&apos;; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &apos;javax.servlet.http.HttpServletRequest&apos; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 49 common frames omitted
+</system-out>
+  </testcase>
+</testsuite>
